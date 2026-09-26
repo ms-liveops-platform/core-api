@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc -p tsconfig.json",
@@ -11,9 +13,21 @@
     "typecheck": "tsc --noEmit && tsc -p tsconfig.test.json",
     "test": "tsx --test test/*.test.ts"
   },
-  "dependencies": { "express": "^5.2.1", "ws": "^8.21.3" },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongodb": "^6.21.0",
+    "ws": "^8.21.3",
+    "zod": "^4.6.5"
+  },
   "devDependencies": {
-    "@types/express": "^5.0.6", "@types/node": "^20.19.43",
-    "@types/ws": "^8.18.1", "tsx": "^4.23.15", "typescript": "^7.0.2"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.19.43",
+    "@types/ws": "^8.18.1",
+    "mongodb-memory-server": "^11.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   }
 }
